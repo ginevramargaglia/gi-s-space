@@ -53,3 +53,9 @@ The blue design uses locally hosted Poppins Light and EB Garamond, obtained from
 ## Home and notebook layout
 
 Home is the landing page: tasks, upcoming plans, today's meals and movement, and a selectable Monday–Sunday recap. Weekly totals use saved entry dates, count completed runs/Move sessions only, and do not infer unrecorded activity. Writing counts the latest saved date, not a revision history. Tasks are managed on Home. Spaces follow Home, Meal plan, Groceries, Expenses, Plans, Running, Reading, Writing, Move, Assistant. The notebook style adds original SVG doodles and locally hosted Caveat handwriting; its Open Font License is included alongside the other fonts.
+
+## Kitchen-first meal planning
+
+Add kitchen ingredients with optional quantities, or mark groceries as bought to make them available. Unbought items remain shopping intentions; an optional toggle lets suggestions consider them too. Suggestions rank simple recipes (20 minutes or less) by ingredient overlap and use repeated meals. You can choose each day's meal and create/edit custom recipes with per-person ingredient amounts. Kitchen stock, custom recipes and preferences save with existing meals in cloud snapshots and backups; older meal records still load.
+
+Updating groceries totals recipe needs, subtracts stock in matching units, preserves manually added items and bought entries, and updates generated shopping entries without duplication. Unspecified stock amounts count as on hand, so check sufficiency yourself. Manually listed shopping quantities are not reconciled automatically. Dry/drained weights stay explicit; fresh and canned tomatoes are not treated as interchangeable. Ingredient aliases support common names (e.g. eggs/egg, rice/brown rice). Bought quantities can be edited using Quantity on the grocery row. Remove used-up stock yourself: cooking does not automatically deduct inventory. Nutrition targets, allergens and food freshness are not automatically evaluated.

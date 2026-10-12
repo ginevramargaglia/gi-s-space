@@ -16,3 +16,5 @@ test('cloud API authenticates user, keeps version conflicts and uses user-scoped
 });
 
 test('reading and writing are saved with backward compatible records',()=>{const library={goal:12,books:[{id:'book',title:'Example',author:'Author',total:200,pages:50,status:'reading',finished:'',notes:'A quote',rating:0}],notes:[{id:'note',title:'A thought',body:'Hello',date:'2026-10-12'}]};assert.ok(validSpace({...sample,library}));assert.ok(validSpace(sample));assert.ok(!validSpace({...sample,library:{...library,books:[{...library.books[0],pages:250}]}}));assert.ok(!validSpace({...sample,library:{...library,notes:[{...library.notes[0],body:'x'.repeat(50001)}]}}));});
+
+test('kitchen quantities and custom recipes pass cloud validation',()=>{const meals={...sample.meals,kitchen:[{id:'stock',name:'Eggs',amount:6,unit:'each'}],customRecipes:[{id:'custom:meal',name:'Egg lunch',minutes:10,ingredients:[['Eggs',2,'each']],steps:'Cook until done.'}]};assert.ok(validSpace({...sample,meals}));assert.ok(!validSpace({...sample,meals:{...meals,kitchen:[{...meals.kitchen[0],amount:-1}]}}));});
