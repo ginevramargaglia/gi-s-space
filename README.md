@@ -43,3 +43,9 @@ The Meals tab defaults to one person: seven breakfasts, lunches and dinners, wit
 ## Running
 
 Dedicated Running tab stores a half-marathon/marathon goal, race date, starting mileage, and planned/completed runs. Track distance, duration, effort, notes, calculated pace, weekly completed kilometres and longest logged run. Running records persist in separate browser storage and are included in exported backups. A provisional December 20, 2026 half-marathon outline assumes three days a week and remains separate from logged sessions; current weekly mileage is required to personalise it. Browser checks verified race defaults, pace, run persistence and mobile layout.
+
+## Reading, writing and design
+
+The Reading space tracks book status (want to read, reading, finished), pages, author, rating, quotes/notes, and a yearly goal. The Writing space supports creating, reopening, editing and deleting notes with dates and word counts; press Save note to persist. Unsaved writing prompts before changing spaces. Both sections are included in account storage and exported backups. Older cloud records and backups still load. No Supabase schema migration is needed for these additions because they use the existing JSON record. Live cloud service verification still requires account configuration.
+
+The blue design uses locally hosted Poppins Light and EB Garamond, obtained from the Google Fonts repository. Their SIL Open Font License files are included in `public/fonts`. Fonts do not make requests to an external provider. The optional downloadable standalone HTML includes the fonts and supports local lists; it is separate from the hosted cloud login.
