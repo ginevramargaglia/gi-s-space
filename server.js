@@ -31,6 +31,7 @@ export function createServer(config = process.env) {
     try {
       if (req.method === 'GET' && url.pathname === '/health') return send(200,{ok:true,mode:config.ASSISTANT_API_KEY?'ai':'demo'});
       if (req.method === 'GET' && url.pathname === '/') {res.writeHead(200,{'Content-Type':'text/html; charset=utf-8','Content-Security-Policy':"default-src 'self'; style-src 'unsafe-inline'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'"});return res.end(await readFile(new URL('./public/index.html',import.meta.url)));}
+      if (req.method === 'GET' && url.pathname === '/cloud.js') {res.writeHead(200,{'Content-Type':'text/javascript'});return res.end(await readFile(new URL('./public/cloud.js',import.meta.url)));}
       if (req.method === 'GET' && url.pathname === '/running.js') {res.writeHead(200,{'Content-Type':'text/javascript'});return res.end(await readFile(new URL('./public/running.js',import.meta.url)));}
       if (req.method === 'GET' && url.pathname === '/meals.js') {res.writeHead(200,{'Content-Type':'text/javascript'});return res.end(await readFile(new URL('./public/meals.js',import.meta.url)));}
       if (req.method === 'GET' && url.pathname === '/app.js') {res.writeHead(200,{'Content-Type':'text/javascript'});return res.end(await readFile(new URL('./public/app.js',import.meta.url)));}

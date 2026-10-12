@@ -1,3 +1,7 @@
+# Cloud login and AI
+
+For the hosted private version, follow [DEPLOY.md](DEPLOY.md). Cloud saving and live AI require the Supabase SQL setup and Netlify runtime variables; unconfigured hosting shows a setup error. All sections save to your account after activation.
+
 # Ginevra’s personal app
 
 Phone-friendly personal workspace with tasks, gym workouts and runs, grocery checklists, EUR expenses, and meetings/events/outings. Work drafting supports CLS Events and Monaco Stays.
@@ -34,7 +38,7 @@ Webhook duplicate tracking and queues are in memory, reset on restart, and faile
 
 ## Weekly meals
 
-The Meals tab defaults to one person: seven breakfasts, lunches and dinners, with simple 5–30 minute recipes. Choose balanced or vegetarian, swap individual recipes, adjust servings, and mark pantry ingredients. Build the grocery list to sum ingredient quantities and exclude pantry items. Rebuilding replaces only meal-generated grocery entries, preserving manual entries, after confirmation. Quantities use recipe totals and drained weights, not retail pack sizes. Meal preferences save separately in localStorage; the current export backs up the everyday lists, not meal preferences. No allergy filtering, calorie targets or clinical nutrition guidance is provided. Browser validation checked 21 meals, pantry exclusion, exact totals, portion scaling, saved settings and vegetarian options.
+The Meals tab defaults to one person: seven breakfasts, lunches and dinners, with simple 5–30 minute recipes. Choose balanced or vegetarian, swap individual recipes, adjust servings, and mark pantry ingredients. Build the grocery list to sum ingredient quantities and exclude pantry items. Rebuilding replaces only meal-generated grocery entries, preserving manual entries, after confirmation. Quantities use recipe totals and drained weights, not retail pack sizes. Meal preferences save separately in localStorage; the current export backs up everyday lists, runs and meal preferences. No allergy filtering, calorie targets or clinical nutrition guidance is provided. Browser validation checked 21 meals, pantry exclusion, exact totals, portion scaling, saved settings and vegetarian options.
 
 ## Running
 
